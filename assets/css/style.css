@@ -88,8 +88,6 @@
         background-image: url(../img/overflow-img.png);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
-
     }
     .overflow-img{
         display: none;
