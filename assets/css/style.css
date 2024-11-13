@@ -1,77 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.Poppins{
+.Poppins {
     font-family: "poppins";
 }
 
-.overflow-section{
-    background-color: rgba(29,26,26);
+.overflow-section {
+    background-color: rgba(29, 26, 26);
 }
 
-.header{
-font-size: 48px;
-font-weight: 600;
-line-height: 61.44px;
+.header {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 61.44px;
 }
 
-.para{
-font-size: 18px;
-font-weight: 400;
-line-height: 32.4px;
-max-width: 660px;
-color: rgba(187,186,186);
-}
-
-.box{
+.para {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32.4px;
     max-width: 660px;
-    background-color: rgba(21,19,19);
+    color: rgba(187, 186, 186);
+}
+
+.box {
+    max-width: 660px;
+    background-color: rgba(21, 19, 19);
     min-height: 92px;
     border-radius: 46px;
     margin-bottom: 24px;
 }
 
-.box:hover{
-    background-color: rgba(12,11,11);
-    .circle{
+.box:hover {
+    background-color: rgba(12, 11, 11);
+
+    .circle {
         background: linear-gradient(90deg, #FFA800 0%, #F06500 100%);
-    
+        color: white;
     }
 }
 
-.circle{
-width: 71px;
-height: 71px;
-border-radius: 50%;
-background-color: white;
-font-size: 22px;
-font-weight: 600;
-line-height: 33px;
-left: 10px;
-top: 10px;
-cursor: pointer;
+.circle {
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
 }
 
-.box-heading{
-font-size: 22px;
-font-weight: 600;
-line-height: 33px;
-left: 110px;
-top: 10px;
+.box-heading {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    left: 110px;
+    top: 10px;
 }
 
-.box-p{
-font-size: 18px;
-font-weight: 400;
-line-height: 32.4px;
-left: 110px;
-top: 45px;
+.box-p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32.4px;
+    left: 110px;
+    top: 45px;
 }
 
 @media (max-width:576px) {
-    .box-heading{
-        font-size: 16px; 
-    } 
-    .box-p{
+    .box-heading {
+        font-size: 16px;
+    }
+
+    .box-p {
         font-size: 14px;
+    }
+}
+
+@media (min-width:992px) {
+    .overflow-section::after {
+        content: "";
+        position: absolute;
+        right: 0%;
+        height: 80%;
+        left: 50%;
+        background-image: url(../img/overflow-img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+    .overflow-img{
+        display: none;
     }
 }
