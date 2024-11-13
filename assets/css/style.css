@@ -32,6 +32,10 @@ color: rgba(187,186,186);
 
 .box:hover{
     background-color: rgba(12,11,11);
+    .circle{
+        background: linear-gradient(90deg, #FFA800 0%, #F06500 100%);
+    
+    }
 }
 
 .circle{
@@ -44,11 +48,7 @@ font-weight: 600;
 line-height: 33px;
 left: 10px;
 top: 10px;
-}
-
-.circle:hover{
-    background: linear-gradient(90deg, #FFA800 0%, #F06500 100%);
-    ;
+cursor: pointer;
 }
 
 .box-heading{
